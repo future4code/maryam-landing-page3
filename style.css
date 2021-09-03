@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.fundo-foto {
+    background-image: url(./img/transportes.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
