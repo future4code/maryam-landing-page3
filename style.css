@@ -1,8 +1,78 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+a{
+    text-transform: uppercase;
+}
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    background-color: rgb(194, 57, 73);
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.navegacao{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    font-size: 15px;
+}
+
+.logo{
+    width: 50px;
+    height: 70px;
+}
+.navegacao a{
+    margin-left: 5%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+a:link, a:visited{
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    color: black;
+}
+
+
+
+@media screen and (max-device-width:480px) {
+.navegacao{
+    grid-template-columns: repeat(1,1fr);
+    width: 100vw;
+    text-align: center;
+}
+.logo{
+    display: none;
+}
+.container_header{
+    padding: 0;
+}
+
+.navegacao a{
+    margin-left: 0;
+    padding-top: 2%;
+    border-bottom: 1px solid black;
+    width: 100vw;
+}
+
+}
+
 
 .fundo-foto {
     background-image: url(./img/transportes.jpg);
