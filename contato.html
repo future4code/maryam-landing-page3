@@ -22,30 +22,59 @@
             </div>
     </header>
     <main>
-        
         <div class="fundo_contato">
             <h2> Trabalhe Conosco</h2>
         </div>
-        <div>
-            <h1>Entre em contato</h1>
-            <section>
-                <form >
-                    <div>
-                        <label for="f_nome">Nome</label><br>
-                        <input type="text" id="f_nome" name="f_nome">
-                    </div>
-                    <div>
-                        <label for="f_email">E-mail</label><br>
-                        <input type="text" id="f_email" name="f_email">
-                    </div>
+        <div id="contato">
+            <div class="curriculo">
+                <h3>PREENCHA O FOMULÁRIO ABAIXO E ENVIE SEU CURRÍCULO</h3>
+                <section>
+                    <form >
+                        <div>
+                            <label for="f_nome">Nome</label><br>
+                            <input type="text" id="f_nome" name="f_nome" placeholder="Nome Completo">
+                        </div>
+                        <div>
+                            <label for="f_email">E-mail</label><br>
+                            <input type="text" id="f_email" name="f_email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div>
+                            <label for="f_idade">Idade</label>
+                            <input type="text" id="f_idade" name="f_idade">
+                            <label for="f_sexo">Sexo</label>
+                            <select name="f_sexo" id="f_sexo" name="f_sexo">
+                                <option value=""selected>--</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                            </select>
+                        </div>
+                        <label for="f_experiencia">Experiência Profissional</label><br>
+                        <input type="text" id="f_experiencia" name="f_experiencia" placeholder="ÚLTIMA/ATUAL EMPRESA">
+                        <div>
+                            <input type="file" id="f_file" name="f_file">
+                        </div>
+                        
+                        <button>Enviar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="mensagem">
+                <h3>OU SE PREFERIR, NOS DEIXE UMA MENSAGEM</h3>
+                <div>
+                    <label for="f_nome_mensagem">Nome</label><br>
+                    <input type="text" id="f_nome_mensagem" name="f_nome_mensagem" placeholder="Nome Completo">
+                </div>
+                <div>
+                    <label for="f_email_mensagem">E-mail</label><br>
+                    <input type="text" id="f_email_mensagem" name="f_email_mensagem" placeholder="Digite seu e-mail">
                     <div>
                         <label for="f_texto">Mensagem</label><br>
                         <textarea name="f_texto" id="f_texto" cols="30" rows="10"></textarea>
                     </div>
-                </form>
-            </section>
+                    <button>Enviar</button>
+                </div>
+            </div>
         </div>
-
     </main>
 </body>
 </html>
