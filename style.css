@@ -52,14 +52,41 @@ a:link, a:visited{
 a:hover{
     color: black;
 }
+form{
+    font-size: 1em;
+}
+#f_nome{
+    width: 20%;
+}
+#f_email{
+    width: 20%;
 
-
+}
+#f_idade{
+    width: 7%;
+}
+#f_sexo{
+    width: 7%;
+}
+#f_experiencia{
+    width: 20%;
+}
+#contato{
+    color: #C23949;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
 
 @media screen and (max-device-width:480px) {
 .navegacao{
     grid-template-columns: repeat(1,1fr);
     width: 100vw;
     text-align: center;
+}
+#contato{
+    grid-template-columns: repeat(1,1fr);
 }
 .logo{
     display: none;
