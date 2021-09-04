@@ -1,14 +1,12 @@
 # landing-page-template
 
 
-# integrantes do grupo
+## integrantes do grupo
 
--Mariana Stamatakis Trevisani 
+- Mariana Stamatakis Trevisani
+- Cassiano Moura de Oliveira
+- Glauber Apolinário de Freitas
 
--Cassiano Moura de Oliveira
-
--Glauber Apolinário de Freitas
-
-Link do surge
+## Link do surge
 
 https://guiltless-woman.surge.sh
