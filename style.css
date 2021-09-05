@@ -89,6 +89,10 @@ form{
     width: 50px;
     height: 50px;
 }
+.icones_logistica{
+    width: 100px;
+    height: 100px;
+}
 footer{
     /* height: 10vh; */
     background-color: #C23949;
@@ -111,41 +115,6 @@ footer{
 }
 
 
-@media screen and (max-device-width:480px) {
-.navegacao{
-    grid-template-columns: repeat(1,1fr);
-    width: 100vw;
-    text-align: center;
-}
-#contato{
-    grid-template-columns: repeat(1,1fr);
-}
-.logo{
-    display: none;
-}
-.container_header{
-    padding: 0;
-}
-
-.navegacao a{
-    margin-left: 0;
-    padding-top: 2%;
-    border-bottom: 1px solid black;
-    width: 100%;
-}
-.fundo-foto{
-    display: none;
-}
-
-#sobre_nos{
-    grid-template-columns: repeat(1,1fr);
-}
-
-#nossos_servicos{
-    grid-template-columns: repeat(1,1fr);
-}
-
-}
 
 
 .fundo-foto {
@@ -230,7 +199,10 @@ footer{
 
 
 
-
+.divsecao2{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
 .img{
     grid-row: 2/5 ;
     width: 400px;
@@ -251,8 +223,8 @@ p{
 
 .layout-secao2{
     padding-top: 3%;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
+    /* display: grid;
+    grid-template-columns: 0.5fr 2fr; */
     /* grid-template-rows: 0.02fr 2fr;
     row-gap: 5px;
     column-gap: 5px; */
@@ -283,3 +255,43 @@ p{
         row-gap: 5px;
         column-gap: 5px;
         align-items: center;}
+
+
+@media screen and (max-device-width:480px) {
+.navegacao{
+    grid-template-columns: repeat(1,1fr);
+    width: 100vw;
+    text-align: center;
+}
+#contato{
+    grid-template-columns: repeat(1,1fr);
+}
+.logo{
+    display: none;
+}
+.container_header{
+    padding: 0;
+}
+
+.navegacao a{
+    margin-left: 0;
+    padding-top: 2%;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.fundo-foto{
+    display: none;
+}
+
+#sobre_nos{
+    grid-template-columns: repeat(1,1fr);
+}
+
+#nossos_servicos{
+    grid-template-columns: repeat(1,1fr);
+}
+.divsecao2{
+    grid-template-columns: repeat(3,1fr);
+}
+
+}
