@@ -6,6 +6,7 @@
 body{
     width: 100%;
     height: 100%;
+    background-color: rgb(192, 109, 119);
 }
 
 header{
@@ -56,11 +57,11 @@ a:hover{
 form{
     font-size: 1em;
 }
-#f_nome{
-    width: 20%;
+#f_nome, #f_nome_mensagem{
+    width: 30%;
 }
-#f_email{
-    width: 20%;
+#f_email, #f_email_mensagem{
+    width: 30%;
 
 }
 #f_idade{
@@ -70,16 +71,20 @@ form{
     width: 7%;
 }
 #f_experiencia{
-    width: 20%;
+    width: 30%;
 }
 #contato{
-    color: #C23949;
+    color: white;
     padding: 1%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     /* position: relative; */
 }
+#f_pesquisa{
+    width: 45%;
+}
+
 
 .icones{
     width: 50px;
@@ -250,11 +255,23 @@ h1{
 
 .layout-secao3{
     display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 0.02fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: 0.02fr 2fr 2fr 2fr;
     row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;}
+    column-gap: 5px; */
+    /* align-items: center; */
+    justify-content: center;
+padding: 5vh;
+    background-color: #C23949;
+    color: white;}
+
+/* .rastreamento{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: space-between;
+align-items: center;
+width: 100%;
+} */
 
 .layout-secao4{
     /* display: grid; */
@@ -274,14 +291,9 @@ h1{
         row-gap: 5px;
         column-gap: 5px;
         align-items: center;}
-.rastreamento{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 
-}
+
+
 .miniaturas_parceiros{
     display: grid;
     grid-template-columns: repeat(13,1fr);
@@ -352,10 +364,15 @@ h1{
     margin: 0;
 }
 .mapa{
+    padding-top: 5vh;
     width: 90vw;
     padding-left: 5vh;
 }
 .miniaturas_parceiros{
     grid-template-columns: repeat(3,1fr);
 }
+.layout-secao3{
+    grid-template-columns: repeat(1,1fr);
+}
+
 }
