@@ -6,12 +6,11 @@
 body{
     width: 100%;
     height: 100%;
+    background-color: rgb(192, 109, 119);
 }
-/* #body_contato{
-    width: 100%;
-    height: 100%;
-    position: relative;
-} */
+
+
+/* ---------HEADER E MENU DE NAVEGAÇÃO--------- */
 header{
     width: 100%;
 
@@ -56,15 +55,20 @@ a:link, a:visited{
 }
 a:hover{
     color: black;
+
+
+
+    /* ---------FORMULARIO DE CONTATO--------- */
+
 }
 form{
     font-size: 1em;
 }
-#f_nome{
-    width: 20%;
+#f_nome, #f_nome_mensagem{
+    width: 30%;
 }
-#f_email{
-    width: 20%;
+#f_email, #f_email_mensagem{
+    width: 30%;
 
 }
 #f_idade{
@@ -74,21 +78,34 @@ form{
     width: 7%;
 }
 #f_experiencia{
-    width: 20%;
+    width: 30%;
 }
 #contato{
-    color: #C23949;
+    color: white;
     padding: 1%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     /* position: relative; */
 }
+#f_pesquisa{
+    width: 45%;
+}
+
+
+
 
 .icones{
     width: 50px;
     height: 50px;
 }
+.icones_logistica{
+    width: 100px;
+    height: 100px;
+}
+
+/* ---------FOOTER--------- */
+
 footer{
     /* height: 10vh; */
     background-color: #C23949;
@@ -110,43 +127,25 @@ footer{
     position: absolute;
 }
 
-
-@media screen and (max-device-width:480px) {
-.navegacao{
-    grid-template-columns: repeat(1,1fr);
-    width: 100vw;
-    text-align: center;
-}
-#contato{
-    grid-template-columns: repeat(1,1fr);
-}
-.logo{
-    display: none;
-}
-.container_header{
-    padding: 0;
-}
-
-.navegacao a{
-    margin-left: 0;
-    padding-top: 2%;
-    border-bottom: 1px solid black;
-    width: 100%;
-}
-
-}
-
+/* ---------FUNDO DAS SEÇÕES--------- */
 
 .fundo-foto {
     background-image: linear-gradient(to right, transparent 0%, #fff 60%), url(./img/transportes.jpg);
-    height: 85vh;
-    background-size: 100% 100%;
-    -webkit-background-size: 150% 110%;
+    height: 90vh;
+    background-size: 200% 100%;
+    -webkit-background-size: 130% 110%;
     -khtml-background-size: 100% 100%;
     -moz-background-size: 100% 100%
 }
 
-
+.fundo_servicos {
+    background-image: linear-gradient(to left, transparent 0%, #fff 80%), url(./img/transportes.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    -webkit-background-size: 130% 110%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100% 
+}
 
 .fundo_contato{
     background-image:  url(./img/transportes.jpg);
@@ -163,6 +162,75 @@ footer{
     font-weight: bolder;
 }
 
+
+/* ---------TEXTOS--------- */
+
+
+p{
+    font-size: 1.3em;
+    padding-left: 10vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+h1{
+    padding-left: 4vw;
+}
+
+
+/* ---------LAYOUTS EM GERAL--------- */
+.layout-secao1{
+    padding-top: 3%;
+    background-color: #C23949 ;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.divsecao2{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+.img{
+    grid-row: 2/5 ;
+    width: 400px;
+    height: 400px;
+    padding-bottom: 6px;
+}
+
+.layout-secao2{
+    padding-top: 3%;
+}
+
+.layout-secao3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+padding: 5vh;
+    background-color: #C23949;
+    color: white;}
+
+.layout-secao4{
+    background-color: white;
+    padding-bottom: 5vh;
+} 
+
+    .layout-secao5{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-rows: 0.02fr 2fr 2fr 2fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        align-items: center;}
+
+.miniaturas_parceiros{
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .slogam{
     text-align: right;
     margin-right: 10vh;
@@ -173,95 +241,119 @@ footer{
     font-weight: bolder;
     font-family: sans-serif ;
     text-shadow: 2px 2px black;
-    /* position: absolute; */
-    /* top: 2%; */
-    /*justify-self: center;
-    left: 25%; */
 }
 
-
 .titulo-secao-menu{
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
     background-color: #C23949;
     color: white;
     grid-column: 1/3;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4em;
     font-style: italic;
     font-weight: bolder;
 }
 .titulo-secao-menu-branco{
-    padding: 10px;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    /* background-color: white; */
     color: #C23949;
     grid-column: 1/3;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4em;
     font-style: italic;
     font-weight: bolder;
 }
 
-
-
-.layout-secao1{
-    padding-top: 3%;
-    background-color: #C23949 ;
-    color: white;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 0.02fr 2fr 2fr 2fr;
-    row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;
-}
-
-    .img{
-    grid-row: 2/5 ;
-    width: 400px;
-    height: 400px;
-    padding-bottom: 6px;
-}
-
 .texto-secao {
     grid-column: 2/3;
-    padding: 20px;
+    padding: 5vw;
     font-size: 1.50em;
 }
 
-p{
-    font-size: 1.3em;
+/* ---------Responsividade--------- */
+
+@media screen and (max-device-width:480px) {
+.navegacao{
+    grid-template-columns: repeat(1,1fr);
+    width: 100vw;
+    text-align: center;
+}
+#contato{
+    grid-template-columns: repeat(1,1fr);
+}
+.logo{
+    display: none;
+}
+.container_header{
+    padding: 0;
+    margin: 0;
 }
 
-.layout-secao2{
-    padding-top: 3%;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 0.02fr 2fr;
-    row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;}
+.navegacao a{
+    margin-left: 0;
+    padding-top: 2%;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.fundo-foto{
+    background-image: none;
+    height: 100%;
+}
+.slogam{
+    margin-bottom: 10vh;
+    text-align: center;
+    margin-right: 0;
+}
 
+.fundo_servicos{
+    background-image: none;
+    height: 100%;
+}
 
+#sobre_nos{
+    grid-template-columns: repeat(1,1fr);
+}
+
+#nossos_servicos{
+    grid-template-columns: repeat(1,1fr);
+}
+.divsecao2{
+    grid-template-columns: repeat(3,1fr);
+}
+.layout-secao1{
+    grid-template-columns: repeat(1,1fr);
+}
+.rastreamento{
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.mapa{
+    padding-top: 5vh;
+    width: 90vw;
+    padding-left: 5vh;
+}
+.miniaturas_parceiros{
+    grid-template-columns: repeat(3,1fr);
+}
 .layout-secao3{
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 0.02fr 2fr 2fr 2fr;
-    row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;}
+    grid-template-columns: repeat(1,1fr);
+}
 
-.layout-secao4{
-    display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 0.02fr 2fr 2fr 2fr;
-    row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;}
+#footer_contato{
+    position: static;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#texto_redes_sociais{
+    display: none;
+}
 
-    .layout-secao5{
-        display: grid;
-        grid-template-columns: 0.5fr 2fr;
-        grid-template-rows: 0.02fr 2fr 2fr 2fr;
-        row-gap: 5px;
-        column-gap: 5px;
-        align-items: center;}
+}
